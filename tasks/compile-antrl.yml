@@ -18,7 +18,7 @@
     mode: '0644'
 
 # Environment setup.
-- name: ANTRL : Set JAVA_HOME
+- name: ANTRL | add to CLASSPATH
   template:
     src: java_home.sh.j2
     dest: /etc/profile.d/java_home.sh
