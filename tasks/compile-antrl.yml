@@ -23,3 +23,9 @@
     src: java_home.sh.j2
     dest: /etc/profile.d/java_home.sh
     mode: 0644
+
+- name: ANTRL | add to aliases
+  template:
+    src: bashrc.j2
+    dest: /etc/bash.bashrc
+    mode: 0644
