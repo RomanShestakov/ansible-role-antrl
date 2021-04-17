@@ -7,4 +7,4 @@ version: 4.9.2
 jar: "{{name}}-{{version}}-complete.jar"
 url: "https://www.{{name}}.org/download/{{jar}}"
 tmp: /tmp
-install_dir: "/opt/{{name}}-{{version}}/"
+install_dir: "/opt/{{name}}-{{version}}"
