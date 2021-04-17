@@ -1,0 +1,10 @@
+---
+# file: ansible-role-antrl/defaults/main.yml
+
+# ANTRL
+name: antrl
+version: 4.9.2
+jar: {{name}}-{{version}}-complete.jar
+url: https://www.antlr.org/download/{{jar}}
+tmp: "/tmp/{{name}}-{{version}}"
+install_dir: "/opt/{{name}}-{{version}}"

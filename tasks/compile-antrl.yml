@@ -1,0 +1,17 @@
+---
+
+- name: ANTRL | Get sources
+  become: true
+  get_url: url={{url}} dest={{tmp}} timeout=180 force=no
+  register: antrl_downloaded
+
+- name: ANTRL | Create Install Dir
+  file:
+    path: {{install_dir}}
+    state: directory
+
+- name: ANTLR | copy to install
+  ansible.builtin.copy:
+    src: {{tmp}}/{{jar}}
+    dest: {{install_dir}}/{{jar}}
+    mode: '0644'
