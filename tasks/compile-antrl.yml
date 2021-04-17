@@ -27,5 +27,5 @@
 - name: ANTRL | add to aliases
   template:
     src: alias.sh.j2
-    dest: /etc/alias.sh
+    dest: /etc/profile.d/alias.sh
     mode: 0644
