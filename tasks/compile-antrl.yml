@@ -12,6 +12,7 @@
 
 - name: ANTLR | copy to install
   ansible.builtin.copy:
+    remote_src: yes
     src: "{{tmp}}/{{jar}}"
-    dest: "{{install_dir}}/{{jar}}"
+    dest: "{{install_dir}}"
     mode: '0644'
