@@ -16,3 +16,10 @@
     src: "{{tmp}}/{{jar}}"
     dest: "{{install_dir}}"
     mode: '0644'
+
+# Environment setup.
+- name: ANTRL : Set JAVA_HOME
+  template:
+    src: java_home.sh.j2
+    dest: /etc/profile.d/java_home.sh
+    mode: 0644
