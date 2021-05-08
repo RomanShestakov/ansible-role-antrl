@@ -20,8 +20,8 @@
 # Environment setup.
 - name: ANTRL | add to CLASSPATH
   template:
-    src: java_home.sh.j2
-    dest: /etc/profile.d/java_home.sh
+    src: java_classpath.sh.j2
+    dest: /etc/profile.d/java_classpath.sh
     mode: 0644
 
 - name: ANTRL | add to aliases
